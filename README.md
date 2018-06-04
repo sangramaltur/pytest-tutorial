@@ -10,3 +10,16 @@ Teaching myself Pytest
 $ python -m pytest
 $ pytest -q
 $ pytest -v
+
+Skip tests
+  - Add a decorator above the test funciton to skip it"@pytest.mark.skip(reason="dont want to run this test")"
+  - Can use skipif for condition check "@pytest.mark.skipif(sys.version_info < (3, 5), reason="dont want to run this test")"
+  - pytest -v rxs [prints the reson why a particular test was skipped ]
+
+- Selectively run tests using their name
+  - pytest -k multiply -v [ runs only tests with multiply as part of the name ]
+
+- Custom markers
+  - @pytest.mark.mac / @pytest.mark.windows [ add markers above func based on a name like mac/windows]
+  - $ pytest -m mac -v / $ pytest -m windows -v [ run the tests only with custom markers mac/Windows]
+  - $ pytest -m "not mac" -v / $ pytest -m "not windows" -v [ run all the tests other than custom markers mac/windows]
