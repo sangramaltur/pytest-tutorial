@@ -1,4 +1,12 @@
 [
-  "test_mydb.py::test_johns_id",
-  "test_mydb.py::test_toms_id"
+  "test_mathlib.py::test_calc_total",
+  "test_mathlib.py::test_calc_multiply",
+  "test_mathlib.py::test_dummy",
+  "test_mathlib.py::test_windows_1",
+  "test_mathlib.py::test_windows_2",
+  "test_mathlib.py::test_mac_1",
+  "test_mathlib.py::test_mac_2",
+  "test_mathlib.py::test_calc_square[5-25]",
+  "test_mathlib.py::test_calc_square[9-81]",
+  "test_mathlib.py::test_calc_square[10-100]"
 ]

@@ -31,3 +31,13 @@ Teaching myself Pytest
   - @pytest.fixture(scope="module") , will setup the connection only once at the module level
   - yield curs , used to tearn down the connections after tests complete .
 
+- Parameterise the inputs and outputs
+  - Can pass input and expected output and run for multiple values
+  - @pytest.mark.parametrize("test_input, expected_output",
+                         [
+                             (5, 25),
+                             (9, 81),
+                             (10, 100),
+                         ]
+                         )
+
